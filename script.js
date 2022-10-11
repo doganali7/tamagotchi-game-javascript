@@ -21,11 +21,16 @@ function Loop(time = 2) {
   } else if (total > 50) {
     document.getElementById("pet").src = "img/tamagochi7.png";
   }
-  hunger = hunger - parseInt(time);
-  hygiene = hygiene - parseInt(time);
-  sleep = sleep - parseInt(time);
-  fun = fun - parseInt(time);
-  social = social - parseInt(time);
+  hunger -= parseInt(time);
+  hygiene -= parseInt(time);
+  sleep -= parseInt(time);
+  fun -= parseInt(time);
+  if (social - parseInt(time) < 0) {
+    social = 0;
+    alert("Game over!");
+  } else {
+    social = social - parseInt(time);
+  }
 
   document.getElementById("hunger").innerHTML = hunger + "%";
   document.getElementById("hygiene").innerHTML = hygiene + "%";
@@ -35,7 +40,7 @@ function Loop(time = 2) {
 }
 
 function Start() {
-  var temporizador = setInterval(Loop, 1000);
+  setInterval(Loop, 1000);
 }
 
 function Eat() {
