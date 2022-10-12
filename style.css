@@ -26,16 +26,38 @@ body {
   background: #777;
 }
 
-.bar {
-  width: 100px;
+#hunger {
   background: #99cc00;
-  margin: 5px, 10px;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+
+#hygiene {
+  background: #99cc00;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+
+#sleep {
+  background: #99cc00;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+
+#fun {
+  background: #99cc00;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+
+#social {
+  background: #99cc00;
   border-radius: 4px;
   padding: 3px 3px;
 }
 
 .side {
-  float: left;
+  /* float: left; */
   margin: 10px 25px;
   width: 120px;
 }
@@ -49,7 +71,4 @@ body {
   position: relative;
   left: 200px;
   top: 100px;
-}
-
-#message {
 }
