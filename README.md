@@ -1,1 +1,1 @@
-# wirtual-pet-javascript
+# tamagotchi-game-javascript
